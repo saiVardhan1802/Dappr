@@ -1,0 +1,298 @@
+/* .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align items on both sides (logo and links) */
+    /* align-items: center;            /* Vertically center the items */
+    /* padding: 10px 20px; */
+    /* background-color: #381cb6;         Background color of the navbar
+}  */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #6F6AF7;
+    width: 100vw;
+    height: 5vw;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-center {
+    display: flex;
+    gap: 6rem;
+    font-family: 'DM Sans', sans-serif;
+    align-items: center;
+}
+
+.nav-font {
+    font-size: 1.5rem;
+}
+
+.name p {
+    font-size:3.5rem;
+    font-family: 'Delius Unicase', cursive;
+}
+
+.name {
+    padding-left: 1.5rem;
+}
+
+.menu {
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;     /* Border around the input and button */
+    border-radius: 25px;        /* Rounded corners for a smooth look */
+    overflow: hidden;           /* Ensures button and input stay together inside the container */
+}
+
+.search-input {
+    border: none;
+    outline: none;              /* Remove default input outline */
+    flex-grow: 1;               /* This ensures the input grows to fill available space */
+    height: 2rem;
+    width: 16rem;
+    font-size: 15px; /* Adjust the size as needed */
+    padding-left: 10px;
+}
+
+.search-button {
+    border: none;
+    outline: none;
+    height: 2rem;
+    width: 3rem;
+    background-color: white;
+}
+
+.left-box {
+    position: relative;
+    left: 5rem;
+    top: 10rem;
+    width: 456px;
+    height: 507px;
+}
+
+.right-box {
+    width: 972px;
+    height: 507px;
+    background-color: #E5D8FF;
+    position: relative;
+    bottom: 20.25rem;
+    left: 40rem;
+    border: 6px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 27px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.text {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    font-family: DM Sans;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 51.82px;
+}
+
+.details {
+    display: flex;
+    gap: 4.5rem;
+}
+
+.size {
+    width: 337px;
+    height: 145.48px;
+    position: relative;
+    left: 4.75rem;
+    bottom: 15rem;
+    border-radius: 11px;
+    box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
+}
+
+.question {
+    background: rgba(146, 157, 255, 1);
+}
+
+.answer {
+    background: rgba(115, 76, 242, 1);
+}
+
+.participants {
+    background: rgba(210, 136, 255, 1);
+}
+
+.passed {
+    background: rgba(0, 0, 0, 1);
+}
+
+.size p {
+    font-family: DM Sans;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 51.82px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-container {
+    height: 3000px;
+    width: 100px;
+    position: relative;
+    bottom: 55rem;
+    float: right;
+    right: 0rem;
+}
+
+.socials {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    top: 8rem;
+}
+
+.bot {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    top: 52rem;
+    left: 95rem;
+    z-index: 1;
+}
+
+.info {
+    background-color: rgba(72, 62, 255, 1);
+    width: 1542px;
+    height: 717px;
+    border-radius: 21px;
+    opacity: 0px;
+    position: relative;
+    bottom: 10rem;
+    left: 6rem;
+}
+
+.left-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    position: relative;
+    top: 4rem;
+    left: 3rem;
+}
+
+.block {
+    border-radius: 22px;
+    border: 5px solid white;
+    opacity: 0px;
+    width: 397px;
+    height: 133px;
+    text-align: center;
+}
+
+.text-type {
+    font-family: DM Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 62.54px;
+    letter-spacing: 0.04em;
+    margin-top: 1.85rem;
+    color: white;
+}
+
+.selected {
+    background: rgba(188, 224, 246, 1);
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.39);
+    border-radius: 22px;
+    opacity: 0px;
+    width: 397px;
+    height: 133px;
+    text-align: center;
+}
+
+.selected p {
+    color: black;
+}
+
+.right-info {
+    background-color: white;
+    width: 1004px;
+    height: 656px;
+    float: right;
+    border-radius: 19px;
+    position: relative;
+    right: 2rem;
+    bottom: 35rem;
+}
+
+.contact {
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+}
+
+.information-text {
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.99px;
+    letter-spacing: 0.105em;
+    text-align: left;
+}
+
+.marks {
+    font-family: Inter;
+    position: relative;
+    left: 2rem;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+span {
+    display: flex;
+    gap: 2rem;
+}
+
+.next {
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    border-radius: 9px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    position: relative;
+    left: 50rem;
+    top: 19rem;
+}
+
+.next p {
+    color: white;
+    padding-left: 1.75rem;
+    font-size: 20px;
+    font-weight: 'Roboto', sans-serif;
+}
+
+.next img {
+    width: 35px;
+    height: 18px;
+}
