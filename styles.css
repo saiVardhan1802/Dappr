@@ -24,105 +24,106 @@ body {
     justify-content: space-between;
     background-color: #6F6AF7;
     width: 100vw;
-    height: 5vw; /* 5vw (assuming a base font-size of 16px, 5vw ≈ 0.3125rem) */
+    height: 80px; /* 5vw (assuming a base font-size of 16px) */
     align-items: center;
     z-index: 1;
 }
 
 .nav-center {
     display: flex;
-    gap: 6rem;
+    gap: 96px; /* 6rem */
     font-family: 'DM Sans', sans-serif;
     align-items: center;
 }
 
 .nav-font {
-    font-size: 1.5rem;
+    font-size: 24px; /* 1.5rem */
 }
 
 .name p {
-    font-size: 3.5rem;
+    font-size: 56px; /* 3.5rem */
     font-family: 'Delius Unicase', cursive;
 }
 
 .name {
-    padding-left: 1.5rem; /* 1.5rem */
+    padding-left: 24px; /* 1.5rem */
 }
 
 .menu {
-    padding-right: 1.5rem; /* 1.5rem */
-    font-size: 1.5rem;
+    padding-right: 24px; /* 1.5rem */
+    font-size: 24px; /* 1.5rem */
 }
 
 .search-container {
     display: flex;
     align-items: center;
-    border: 0.125rem solid #ccc;     /* 2px */
-    border-radius: 1.5625rem;        /* 25px */
-    overflow: hidden;           /* Ensures button and input stay together inside the container */
+    border: 2px solid #ccc; /* 0.125rem */
+    border-radius: 25px; /* 1.5625rem */
+    overflow: hidden; /* Ensures button and input stay together inside the container */
 }
 
 .search-input {
     border: none;
-    outline: none;              /* Remove default input outline */
-    flex-grow: 1;               /* This ensures the input grows to fill available space */
-    height: 2rem;           /* 2rem */
-    width: 16rem;               /* 16rem */
-    font-size: 0.9375rem;       /* 15px */
-    padding-left: 0.625rem;     /* 10px */
+    outline: none; /* Remove default input outline */
+    flex-grow: 1; /* This ensures the input grows to fill available space */
+    height: 32px; /* 2rem */
+    width: 256px; /* 16rem */
+    font-size: 15px; /* 0.9375rem */
+    padding-left: 10px; /* 0.625rem */
 }
 
 .search-button {
     border: none;
     outline: none;
-    height: 2rem;           /* 2rem */
-    width: 3rem;           /* 3rem */
+    height: 32px; /* 2rem */
+    width: 48px; /* 3rem */
     background-color: white;
 }
 
 .left-box {
     position: relative;
-    left: 5rem;                 /* 5rem */
-    top: 10rem;                 /* 10rem */
-    width: 28.5rem;             /* 456px */
-    height: 31.6875rem;         /* 507px */
+    left: 80px; /* 5rem */
+    top: 160px; /* 10rem */
+    width: 456px; /* 28.5rem */
+    height: 507px; /* 31.6875rem */
 }
 
 .right-box {
-    width: 60.75rem;            /* 972px */
-    height: 31.6875rem;         /* 507px */
+    width: 972px; /* 60.75rem */
+    height: 507px; /* 31.6875rem */
     background-color: #E5D8FF;
     position: relative;
-    bottom: 20.25rem;           /* 20.25rem */
-    left: 40rem;                /* 40rem */
-    border: 0.375rem;           /* 6px */
-    border-radius: 1.25rem;     /* 20px */
-    box-shadow: 0.1875rem 0.3125rem 1.6875rem 0 rgba(0, 0, 0, 0.25) inset; /* 3px 5px 27px */
+    bottom: 324px; /* 20.25rem */
+    left: 640px; /* 40rem */
+    border: 6px; /* 0.375rem */
+    border-radius: 20px; /* 1.25rem */
+    box-shadow: 3px 5px 27px rgba(0, 0, 0, 0.25) inset; /* 0.1875rem 0.3125rem 1.6875rem 0 */
 }
 
 .text {
     position: relative;
-    top: 1rem;                  /* 1rem */
-    left: 1rem;                 /* 1rem */
+    top: 16px; /* 1rem */
+    left: 16px; /* 1rem */
     font-family: DM Sans;
-    font-size: 1.8125rem;       /* 29px */
+    font-size: 29px; /* 1.8125rem */
     font-weight: 400;
-    line-height: 3.2375rem;     /* 51.82px */
+    line-height: 51.82px; /* 3.2375rem */
+    color: rgba(111, 115, 115, 1);
 }
 
 .details {
     display: flex;
-    gap: 4.5rem;                /* 4.5rem */
+    gap: 72px; /* 4.5rem */
 }
 
 .size {
-    width: 21.0625rem;          /* 337px */
-    height: 9.06125rem;         /* 145.48px */
+    width: 337px; /* 21.0625rem */
+    height: 145px; /* 9.06125rem */
     position: relative;
-    left: 4.75rem;              /* 4.75rem */
-    bottom: 15rem;              /* 15rem */
-    border-radius: 0.6875rem;   /* 11px */
-    box-shadow: 0px 0.5625rem 1.9375rem 0 rgba(0, 0, 0, 0.4); /* 0px 9px 31px */
+    left: 76px; /* 4.75rem */
+    bottom: 240px; /* 15rem */
+    border-radius: 11px; /* 0.6875rem */
+    box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.4); /* 0px 0.5625rem 1.9375rem 0 */
 }
 
 .question {
@@ -143,87 +144,87 @@ body {
 
 .size p {
     font-family: DM Sans;
-    font-size: 1.8125rem;       /* 29px */
+    font-size: 29px; /* 1.8125rem */
     font-weight: 700;
-    line-height: 3.2375rem;     /* 51.82px */
+    line-height: 51.82px; /* 3.2375rem */
     letter-spacing: 0.04em;
     text-align: left;
     color: rgba(255, 255, 255, 1);
-    margin-left: 1rem;          /* 1rem */
-    margin-top: 0.5rem;         /* 0.5rem */
+    margin-left: 16px; /* 1rem */
+    margin-top: 12px; /* 0.5rem */
 }
 
 .social-container {
-    height: 187.5rem;           /* 3000px */
-    width: 6.25rem;             /* 100px */
+    height: 3000px; /* 187.5rem */
+    width: 100px; /* 6.25rem */
     position: relative;
-    bottom: 55rem;              /* 55rem */
+    bottom: 880px; /* 55rem */
     float: right;
-    right: 0rem;                /* 0rem */
+    right: 0; /* 0rem */
 }
 
 .socials {
     position: sticky;
     display: flex;
     flex-direction: column;
-    top: 8rem;                  /* 8rem */
+    top: 128px; /* 8rem */
 }
 
 .bot {
     position: fixed;
-    width: 9.375rem;            /* 150px */
-    height: 9.375rem;           /* 150px */
-    top: 52rem;                 /* 52rem */
-    left: 95rem;                /* 95rem */
+    width: 150px; /* 9.375rem */
+    height: 150px; /* 9.375rem */
+    top: 832px; /* 52rem */
+    left: 1520px; /* 95rem */
     z-index: 1;
 }
 
 .info {
     background-color: rgba(72, 62, 255, 1);
-    width: 96.375rem;           /* 1542px */
-    height: 44.6875rem;         /* 717px */
-    border-radius: 1.3125rem;   /* 21px */
+    width: 1542px; /* 96.375rem */
+    height: 717px; /* 44.6875rem */
+    border-radius: 21px; /* 1.3125rem */
     opacity: 0px;
     position: relative;
-    bottom: 10rem;              /* 10rem */
-    left: 6rem;                 /* 6rem */
+    bottom: 160px; /* 10rem */
+    left: 96px; /* 6rem */
 }
 
 .left-info {
     display: flex;
     flex-direction: column;
-    gap: 6rem;                  /* 6rem */
+    gap: 96px; /* 6rem */
     position: relative;
-    top: 4rem;                 /* 4rem */
-    left: 3rem;                 /* 3rem */
+    top: 64px; /* 4rem */
+    left: 48px; /* 3rem */
 }
 
 .block {
-    border-radius: 1.375rem;    /* 22px */
-    border: 0.3125rem solid white; /* 5px */
+    border-radius: 22px; /* 1.375rem */
+    border: 5px solid white; /* 0.3125rem */
     opacity: 0px;
-    width: 24.8125rem;          /* 397px */
-    height: 8.3125rem;          /* 133px */
+    width: 397px; /* 24.8125rem */
+    height: 133px; /* 8.3125rem */
     text-align: center;
 }
 
 .text-type {
     font-family: DM Sans;
-    font-size: 2.1875rem;       /* 35px */
+    font-size: 35px; /* 2.1875rem */
     font-weight: 700;
-    line-height: 3.904rem;      /* 62.54px */
+    line-height: 62.54px; /* 3.904rem */
     letter-spacing: 0.04em;
-    margin-top: 1.85rem;        /* 1.85rem */
+    margin-top: 30px; /* 1.85rem */
     color: white;
 }
 
 .selected {
     background: rgba(188, 224, 246, 1);
-    box-shadow: 0px 0.375rem 2.1875rem 0 rgba(0, 0, 0, 0.39); /* 0px 6px 35px */
-    border-radius: 1.375rem;    /* 22px */
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.39); /* 0px 0.375rem 2.1875rem 0 */
+    border-radius: 22px; /* 1.375rem */
     opacity: 0px;
-    width: 24.8125rem;          /* 397px */
-    height: 8.3125rem;          /* 133px */
+    width: 397px; /* 24.8125rem */
+    height: 133px; /* 8.3125rem */
     text-align: center;
 }
 
@@ -233,66 +234,66 @@ body {
 
 .right-info {
     background-color: white;
-    width: 62.75rem;            /* 1004px */
-    height: 41rem;             /* 656px */
+    width: 1004px; /* 62.75rem */
+    height: 656px; /* 41rem */
     float: right;
-    border-radius: 1.1875rem;   /* 19px */
+    border-radius: 19px; /* 1.1875rem */
     position: relative;
-    right: 2rem;                /* 2rem */
-    bottom: 35rem;              /* 35rem */
+    right: 32px; /* 2rem */
+    bottom: 560px; /* 35rem */
 }
 
 .contact {
     position: relative;
-    top: 3rem;                 /* 3rem */
-    left: 2rem;                /* 2rem */
+    top: 48px; /* 3rem */
+    left: 32px; /* 2rem */
 }
 
 .information-text {
     font-family: Inter;
-    font-size: 2.375rem;       /* 38px */
+    font-size: 38px; /* 2.375rem */
     font-weight: 700;
-    line-height: 2.874rem;      /* 45.99px */
-    letter-spacing: 0.105rem;
+    line-height: 46px; /* 2.874rem */
+    letter-spacing: 1.68px; /* 0.105rem */
     text-align: left;
 }
 
 .marks {
     font-family: Inter;
     position: relative;
-    left: 2rem;                /* 2rem */
-    top: 3rem;                 /* 3rem */
+    left: 32px; /* 2rem */
+    top: 48px; /* 3rem */
     display: flex;
-    flex-direction : column;
-    gap : 3rem;
+    flex-direction: column;
+    gap: 48px; /* 3rem */
 }
 
 span {
     display: flex;
-    gap: 2rem;
+    gap: 32px; /* 2rem */
 }
 
 .next {
     background-color: black;
-    width: 9.375rem;  /* 150px */
-    height: 3.125rem; /* 50px */
-    border-radius: 0.5625rem; /* 9px */
+    width: 150px; /* 9.375rem */
+    height: 50px; /* 3.125rem */
+    border-radius: 9px; /* 0.5625rem */
     display: flex;
-    gap: 0.5rem; /* 0.5rem */
+    gap: 8px;
     align-items: center;
     position: relative;
-    left: 50rem;  /* 50px */
-    top: 19rem;  /* 19px */
+    left: 800px; /* 2rem */
+    top: 300px; /* 2rem */
 }
 
 .next p {
     color: white;
-    padding-left: 1.75rem; /* 1.75rem */
-    font-size: 1.25rem; /* 20px */
-    font-weight: 'Roboto', sans-serif;
+    padding-left: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; /* 1.625rem */
 }
 
 .next img {
-    width: 2.1875rem; /* 35px */
-    height: 1.125rem; /* 18px */
+    width: 35px; /* 35px */
+    height: 18px; /* 18px */
 }
