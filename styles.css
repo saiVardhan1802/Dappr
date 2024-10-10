@@ -50,8 +50,9 @@ body {
 }
 
 .menu {
-    padding-right: 24px; /* 1.5rem */
-    font-size: 24px; /* 1.5rem */
+    padding-right: 30px; /* 1.5rem */
+    font-size: 40px; /* 1.5rem */
+    color: white;
 }
 
 .search-container {
