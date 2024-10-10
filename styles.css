@@ -60,13 +60,13 @@ body {
     align-items: center;
     border: 2px solid #ccc; /* 0.125rem */
     border-radius: 25px; /* 1.5625rem */
-    overflow: hidden; /* Ensures button and input stay together inside the container */
+    overflow: hidden;
 }
 
 .search-input {
     border: none;
-    outline: none; /* Remove default input outline */
-    flex-grow: 1; /* This ensures the input grows to fill available space */
+    outline: none; 
+    flex-grow: 1; 
     height: 32px; /* 2rem */
     width: 256px; /* 16rem */
     font-size: 15px; /* 0.9375rem */
